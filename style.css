@@ -1,0 +1,97 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main .utama {
+  display: flex;
+  font-size: 23px;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+}
+
+.main .utama strong {
+  color: black;
+}
+
+input {
+  border: none;
+  background-color: whitesmoke;
+  color: black;
+  padding: 10px;
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+.main .input button {
+  background-color: lightseagreen;
+  border: none;
+  font-size: 24px;
+  margin-left: 10px;
+  padding: 11px;
+  font-weight: 500;
+  color: whitesmoke;
+}
+
+.main .input button:hover {
+  cursor: pointer;
+  background-color: rgb(46, 196, 156);
+  transition: 0.5s all ease-in-out;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -210px;
+  font-weight: 600;
+  font-size: 12px;
+  color: black;
+}
+
+#pertanyaan {
+  font-size: 22px;
+}
+
+#loaders {
+  display: none;
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  border-top: 3px solid lightseagreen;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: 9;
+  animation: 1s spin infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* media */
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
